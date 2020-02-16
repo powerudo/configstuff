@@ -12,6 +12,7 @@ Plug 'autozimu/LanguageClient-neovim', {
 Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 Plug 'junegunn/fzf'
 Plug 'fneu/breezy'
+Plug 'tpope/vim-fugitive'
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""" initialize plug """
 call plug#end()
