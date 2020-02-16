@@ -1,1 +1,3 @@
 # configstuff
+
+nvim -> ~/.config

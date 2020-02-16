@@ -11,10 +11,15 @@ Plug 'autozimu/LanguageClient-neovim', {
     \ }
 Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 Plug 'junegunn/fzf'
+Plug 'fneu/breezy'
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""" initialize plug """
 call plug#end()
 
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""" plugin: airline """
+let g:airline_powerline_fonts = 1
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""" plugin: deoplete """
 let g:deoplete#enable_at_startup = 1
 
 """"""""""""""""""""""""""""""""""""""""""" language server protocol client """
@@ -32,9 +37,12 @@ nnoremap <silent> K :call LanguageClient#textDocument_hover()<CR>
 nnoremap <silent> gd :call LanguageClient#textDocument_definition()<CR>
 nnoremap <silent> <F2> :call LanguageClient#textDocument_rename()<CR>
 
-" my prefs
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""" my prefs """
+" edit stuff
 set nu
 set expandtab
 
-" airline
-let g:airline_powerline_fonts = 1
+" appearance
+set background=light
+set termguicolors
+colorscheme breezy
