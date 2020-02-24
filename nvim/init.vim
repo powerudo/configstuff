@@ -43,6 +43,8 @@ nnoremap <silent> <F2> :call LanguageClient#textDocument_rename()<CR>
 " edit stuff
 set nu
 set expandtab
+set shiftwidth=4
+set softtabstop=4
 
 " appearance
 set background=light
