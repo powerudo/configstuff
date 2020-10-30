@@ -1,0 +1,53 @@
+[user]
+	name = Claus Houmøller
+	email = claus@houmoeller.dk
+[core]
+	editor = nvim
+	pager = less -x1,5
+	excludesfile = ~/.gitignore
+[color]
+	ui = true
+[grep]
+	lineNumber = true
+[gc]
+	auto = 0
+[color "diff"]
+	whitespace = red reverse
+[rerere]
+	enabled = false
+[alias]
+	a = add
+	b = branch
+	c = commit
+        cl = clone --recurse-submodules
+	co = checkout --recurse-submodules
+	cp = cherry-pick
+	d = diff
+	f = fetch --recurse-submodules
+	fi = files
+	g = grep
+	gr = graph
+	h = head
+	l = log
+	ls = ls-files --recurse-submodules
+	m = merge --ff-only
+	pl = pull --ff-only --rebase --recurse-submodules
+	ps = push --recurse-submodules
+	r = rebase
+	rl = reflog
+	rs = reset --recurse-submodules
+	s = status
+	sh = show
+	sm = submodule
+	ss = status --untracked-files=no
+	ff = fetch
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+[pull]
+	ff = only
+	rebase = true
+[rebase]
+	instructionFormat = [%<(19) %an @ %>(14) %ar ] %s
