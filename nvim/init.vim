@@ -16,6 +16,10 @@ Plug 'fneu/breezy'
 " git plugin
 Plug 'tpope/vim-fugitive'
 
+" code completion stuff, https://github.com/neoclide/coc.nvim
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
+Plug 'fannheyward/coc-markdownlint', { 'do': ':CocInstall coc-markdownlint', 'for': ['markdown'] }
+
 call plug#end()
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""" plugin: airline "
