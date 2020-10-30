@@ -30,6 +30,7 @@ let g:deoplete#enable_at_startup = 1
 set hidden
 
 let g:LanguageClient_serverCommands = {
+    \ 'cpp': ['/usr/bin/clangd', '-std=c++2a', '-fcoroutines-ts'],
     \ 'python': ['/usr/bin/pyls']
     \ }
 
