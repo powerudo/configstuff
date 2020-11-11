@@ -18,7 +18,13 @@ Plug 'tpope/vim-fugitive'
 
 " code completion stuff, https://github.com/neoclide/coc.nvim
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
-Plug 'fannheyward/coc-markdownlint', { 'do': ':CocInstall coc-markdownlint', 'for': ['markdown'] }
+
+Plug 'clangd/coc-clangd',            {'do': ':CocInstall coc-clangd', 'for': ['cpp']}
+Plug 'fannheyward/coc-markdownlint', {'do': ':CocInstall coc-markdownlint', 'for': ['markdown']}
+Plug 'neoclide/coc-python',          {'do': ':CocInstall coc-python', 'for': ['python']}
+Plug 'neoclide/coc-tsserver',        {'do': ':CocInstall coc-tsserver', 'for': ['typescript']}
+Plug 'voldikss/coc-cmake',           {'do': ':CocInstall coc-cmake', 'for': ['cmake']}
+"Plug 'neoclide/coc-yaml', {'do': ':CocInstall coc-yaml', 'for': ['yaml']}
 
 call plug#end()
 
