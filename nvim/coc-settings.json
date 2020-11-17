@@ -1,0 +1,7 @@
+{
+    "markdownlint.config": {
+        "MD046": {
+            "style": "indented"
+        }
+    }
+}
