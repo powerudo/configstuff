@@ -19,11 +19,12 @@
 	a = add
 	b = branch
 	c = commit
-        cl = clone --recurse-submodules
+	cl = clone --recurse-submodules
 	co = checkout --recurse-submodules
 	cp = cherry-pick
 	d = diff
 	f = fetch --recurse-submodules
+	ff = fetch
 	fi = files
 	g = grep
 	gr = graph
@@ -40,7 +41,6 @@
 	sh = show
 	sm = submodule
 	ss = status --untracked-files=no
-	ff = fetch
 [filter "lfs"]
 	clean = git-lfs clean -- %f
 	smudge = git-lfs smudge -- %f
