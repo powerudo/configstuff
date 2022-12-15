@@ -64,6 +64,11 @@ return packer.startup(function(use)
   -- Colorschemes
   use { "sainnhe/everforest", commit = "v0.2.3" }
 
+  -- LSP / code completion
+  use { "neovim/nvim-lspconfig", commit = "v0.1.3" }
+  use { "hrsh7th/cmp-nvim-lsp", commit = "59224771f91b86d1de12570b4070fe4ad7cd1eeb" }
+  use { "hrsh7th/nvim-cmp", commit = "8bbaeda725d5db6e4e1be2867a64b43bf547cf06" }
+
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
   if PACKER_BOOTSTRAP then
