@@ -2,7 +2,7 @@
 vim.g.airline_powerline_fonts = 1
 vim.g.airline_section_z = 'Ln %3l Col %2c'
 vim.g.airline_theme = 'everforest'
-vim.g['airline#extensions#tabline#enabled'] = 1
+vim.g['airline#extensions#tabline#enabled'] = 1 -- show all buffers in top bar
 
 -- everforest, colorscheme
 vim.opt.background = 'dark'
