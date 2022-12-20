@@ -8,8 +8,8 @@
 -- TODO:
 -- https://github.com/nvim-tree/nvim-tree.lua/wiki/Showcases
 
-require("user.options")
-require("user.keymaps")
 require("user.plugins")
 require("user.plugins_config")
+require("user.options")
+require("user.keymaps")
 require("user.lsp")
