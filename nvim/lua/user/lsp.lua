@@ -110,7 +110,13 @@ cmp.setup.cmdline(':', {
 
 local capabilities = require('cmp_nvim_lsp').default_capabilities()
 
-require('lspconfig')['jedi_language_server'].setup {
+local lspconfig = require('lspconfig')
+lspconfig['jedi_language_server'].setup {
+    on_attach = on_attach,
+    flags = lsp_flags,
+    capabilities = capabilities
+}
+lspconfig.tsserver.setup {
     on_attach = on_attach,
     flags = lsp_flags,
     capabilities = capabilities
